@@ -824,7 +824,7 @@ variables:
     title: "Bastion Subnet"
     description: "Select public subnet. Ensure the subnet is in the same Availability Domain selected above"
     dependsOn:
-      compartmentId: ${compartment_ocid}
+      compartmentId: ${vcn_compartment}
       vcnId: ${vcn_id}
       hidePrivateSubnet: ${hide_private_subnet}
     visible: ${use_existing_vcn}
@@ -835,7 +835,7 @@ variables:
     title: "Storage Subnet"
     description: "Select private subnet to provision file servers (Storage/Metadata/Management servers).  This subnet to used to access Block Volmes storage. Ensure the subnet is in the same Availability Domain selected above"
     dependsOn:
-      compartmentId: ${compartment_ocid}
+      compartmentId: ${vcn_compartment}
       vcnId: ${vcn_id}
       hidePublicSubnet: ${hide_public_subnet}
     visible: ${use_existing_vcn}
@@ -846,7 +846,7 @@ variables:
     title: "Filesystem Subnet"
     description: "Select private subnet to provision client nodes to mount filesystem. This subnet is used for file servers and client nodes to send and receive data. File servers (Storage/Metadata/Management servers) will use a secondary VNIC to connect with client nodes. Ensure the subnet is in the same Availability Domain selected above"
     dependsOn:
-      compartmentId: ${compartment_ocid}
+      compartmentId: ${vcn_compartment}
       vcnId: ${vcn_id}
       hidePublicSubnet: ${hide_public_subnet}
     visible: ${use_existing_vcn}
