@@ -808,7 +808,7 @@ variables:
     visible:
       and:
         - ${use_existing_vcn}
-        
+
   vpc_cidr:
     title: "VPC CIDR"
     description: "Network CIDR to use for VPC/VCN."
@@ -818,15 +818,6 @@ variables:
     visible:
       not:
         - ${use_existing_vcn}
-
-  vcn_id:
-    type: oci:core:vcn:id
-    title: "Existing VCN"
-    description: "Select Existing VCN"
-    dependsOn:
-      compartmentId: ${compartment_ocid}
-    visible: ${use_existing_vcn}
-    required: true
 
   bastion_subnet_id:
     type: oci:core:subnet:id
