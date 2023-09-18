@@ -44,6 +44,7 @@ groupings:
           - show_advanced
     variables:
     - use_existing_vcn
+    - vcn_compartment
     - vpc_cidr
     - vcn_id
     - bastion_subnet_id
@@ -803,6 +804,7 @@ variables:
     visible: ${use_existing_vcn}
     default: ${targetCompartment}
     required: true
+    
   vcn_id:
     type: oci:core:vcn:id
     visible:
