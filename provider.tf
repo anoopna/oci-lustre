@@ -34,7 +34,7 @@ provider "oci" {
 }
 
 # Variables required by the OCI Provider only when running Terraform CLI with standard user based Authentication
-variable "user_ocid" { "ocid1.user.oc1..aaaaaaaaedytf24fnrvlgu562epmhkc3t27dmtv5zrodnhjit6e3l2obujdq" }
-variable "fingerprint" { "a7:b6:c9:77:72:c1:37:8d:4f:5d:a4:5d:3c:11:cf:61" }
-variable "private_key_path" { "/home" }
+variable "user_ocid" { default = "ocid1.user.oc1..aaaaaaaaedytf24fnrvlgu562epmhkc3t27dmtv5zrodnhjit6e3l2obujdq" }
+variable "fingerprint" { default = "a7:b6:c9:77:72:c1:37:8d:4f:5d:a4:5d:3c:11:cf:61" }
+variable "private_key_path" { default = "/home" }
 
