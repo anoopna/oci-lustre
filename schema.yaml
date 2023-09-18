@@ -855,7 +855,7 @@ variables:
     dependsOn:
       compartmentId: ${vcn_compartment}
       vcnId: ${vcn_id}
-      hidePublicSubnet: ${hide_public_subnet}
+      hidePublicSubnet: true
     visible: ${use_existing_vcn}
     required: true
   
