@@ -44,8 +44,8 @@ groupings:
           - show_advanced
     variables:
     - use_existing_vcn
-    - vcn_compartment
     - vpc_cidr
+    - vcn_compartment
     - vcn_id
     - bastion_subnet_id
     - storage_subnet_id
