@@ -111,7 +111,7 @@ For the module's usage check the code examples below:
 ## Post-deployment informations
 
 The following information is displayed on the console post-deployment.
-
+```
    Lustre Management Service Hostname
    SSH login information for all nodes
    generated_ssh_private_key
@@ -120,4 +120,4 @@ The following information is displayed on the console post-deployment.
    management_server_private_ips
    metadata_server_private_ips
    storage_server_private_ips
-
+```
