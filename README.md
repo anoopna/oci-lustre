@@ -106,3 +106,18 @@ For the module's usage check the code examples below:
 ## Architecture Diagram
 
 ![](./images/lustre-oci.png)
+
+
+## Post-deployment informations
+
+The following information is displayed on the console post-deployment.
+
+ Lustre Management Service Hostname
+ SSH login information for all nodes
+ generated_ssh_private_key
+ bastion ip
+ compute_private_ips = 10.0.6.196
+ management_server_private_ips
+ metadata_server_private_ips
+ storage_server_private_ips
+
